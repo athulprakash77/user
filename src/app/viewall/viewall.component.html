@@ -8,15 +8,36 @@
                 <thead>
                   <tr>
                     <th scope="col">id</th>
-                    <th scope="col">name</th>
+                    <th scope="col">firstname</th>
+                    <th scope="col">lastName</th>
+                    <th scope="col">maidenName</th>
+                    <th scope="col">age</th>
+                    <th scope="col">gender</th>
                     <th scope="col">email</th>
+                    <th scope="col">phone</th>
+                    <th scope="col">username</th>
+                    <th scope="col">password</th>
+                    <th scope="col">birthDate</th>
+
+
                   </tr>
                 </thead>
                 <tbody>
                   <tr *ngFor="let i of users">
                     <th scope="row"> {{i.id}}  </th>
-                    <td>{{i.name}}</td>
+                    <td>{{i.firstname}}</td>
+                    <td>{{i.lastName}}</td>
+                    <td>{{i.maidenName}}</td>
+                    <td>{{i.age}}</td>
+                    <td>{{i.gender}}</td>
                     <td>{{i.email}}</td>
+                    <td>{{i.phone}}</td>
+                    <td>{{i.username}}</td>
+v                    <td>{{i.password}}</td>
+v                    <td>{{i.birthDate}}</td>
+
+
+
                   </tr>
                 
                 </tbody>

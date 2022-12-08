@@ -7,9 +7,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdduserComponent implements OnInit {
 
-  constructor() { }
+  constructor( ) { }
+
+  id=""
+  firstname=""
+  lastName=""
+  maidenName=""
+  age=""
+  gender=""
+  email=""
+  phone=""
+  username=""
+  password=""
+  birthDate=""
 
   ngOnInit(): void {
   }
+  read=()=>{
+    let data={
+      "id":"this.id",
+      "firstname":"this.firstname",
+      "lastName":"this.lastName",
+      "maidenName":"this.maidenName",
 
+      "age":"this.age",
+
+      "gender":"this.gender",
+
+      "email":"this.email",
+
+      "phone":"this.phone",
+      "username":"this.username",
+      "password":"this.password",
+      "birthDate":"this.birthDate",
+
+
+
+
+
+
+    }
+    console.log(data)
+  }
 }
