@@ -12,18 +12,14 @@ export class ViewallComponent implements OnInit {
 
   dataFromApi=()=>{
     this.api.fetchuser().subscribe(
-      (Response)=>{
-        this.users=Response
+      (Response:any)=>{
+        this.users=Response.users
       }
     )
   }
 
 
-  users:any=[
-
-    
-      
-    ]
+  users:any=[]
 
   
 

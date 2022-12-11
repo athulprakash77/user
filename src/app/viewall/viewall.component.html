@@ -4,11 +4,15 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 col-xxl-12">
 
-            <table class="table">
+          
+
+
+
+              <table class="table">
                 <thead>
                   <tr>
                     <th scope="col">id</th>
-                    <th scope="col">firstname</th>
+                    <th scope="col">firstName</th>
                     <th scope="col">lastName</th>
                     <th scope="col">maidenName</th>
                     <th scope="col">age</th>
@@ -18,6 +22,11 @@
                     <th scope="col">username</th>
                     <th scope="col">password</th>
                     <th scope="col">birthDate</th>
+                    <th scope="col">image</th>
+
+
+
+                    
 
 
                   </tr>
@@ -25,7 +34,7 @@
                 <tbody>
                   <tr *ngFor="let i of users">
                     <th scope="row"> {{i.id}}  </th>
-                    <td>{{i.firstname}}</td>
+                    <td>{{i.firstName}}</td>
                     <td>{{i.lastName}}</td>
                     <td>{{i.maidenName}}</td>
                     <td>{{i.age}}</td>
@@ -33,8 +42,13 @@
                     <td>{{i.email}}</td>
                     <td>{{i.phone}}</td>
                     <td>{{i.username}}</td>
-v                    <td>{{i.password}}</td>
-v                    <td>{{i.birthDate}}</td>
+                    <td>{{i.password}}</td>
+                    <td>{{i.birthDate}}</td>
+                    <td><img src="{{i.image}}" alt="" height="100"></td>
+
+
+
+                 
 
 
 
@@ -42,6 +56,7 @@ v                    <td>{{i.birthDate}}</td>
                 
                 </tbody>
               </table>
+
 
 
 
